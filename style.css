@@ -21,6 +21,27 @@ img {
     border-radius: 10px;
 }
 
+  img:hover{
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rotate 2s linear forwards;
+    transform: translateZ(-25px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg) translateZ(-25px);
+    }
+    100% {
+      transform: rotateY(360deg) translateZ(-25px);
+    }
+  }
+
+
 h1 {
     font-weight: 700;
     font-size: 22px;
